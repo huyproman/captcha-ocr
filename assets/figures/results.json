@@ -1,0 +1,85 @@
+{
+  "VAL": [
+    {
+      "model": "S0",
+      "exact": 968,
+      "cer": 0.0032,
+      "parameters": 1587486,
+      "cpu_p50_ms": 19.1117
+    },
+    {
+      "model": "S0-A",
+      "exact": 945,
+      "cer": 0.0055,
+      "parameters": 1853214,
+      "cpu_p50_ms": 20.460594
+    },
+    {
+      "model": "C1",
+      "exact": 79,
+      "cer": 0.2114,
+      "parameters": 1587743,
+      "cpu_p50_ms": 22.0571755
+    },
+    {
+      "model": "C2",
+      "exact": 974,
+      "cer": 0.0026,
+      "parameters": 2049055,
+      "cpu_p50_ms": 19.811600499999997
+    },
+    {
+      "model": "C3",
+      "exact": 565,
+      "cer": 0.0518,
+      "parameters": 2593056,
+      "cpu_p50_ms": 32.8747875
+    },
+    {
+      "model": "M0",
+      "exact": 735,
+      "cer": 0.0306,
+      "parameters": 962782,
+      "cpu_p50_ms": 5.19,
+      "timing_qualification": "different reference protocol"
+    }
+  ],
+  "TEST": {
+    "model": "C2",
+    "exact": 975,
+    "N": 1000,
+    "cer": 0.0025,
+    "wilson95": [
+      96.3355,
+      98.301
+    ]
+  },
+  "qualification": "single dataset, single seed; C2 vs S0 interval crosses zero; robustness not shown",
+  "interventions": [
+    {
+      "name": "Learned-query alignment (S0-A)",
+      "delta": -2.3,
+      "ci": [
+        -3.9,
+        -0.7
+      ]
+    },
+    {
+      "name": "Class-weighted loss",
+      "delta": 0.1,
+      "ci": [
+        -1,
+        1.1
+      ]
+    },
+    {
+      "name": "Contrast treatment",
+      "delta": -0.8,
+      "ci": [
+        -1.9,
+        0.2
+      ]
+    }
+  ],
+  "augmentation": "not run"
+}

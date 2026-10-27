@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "captcha-ocr-publication"
+version = "1.0.0"
+description = "Complete-image CAPTCHA OCR: comparison of six architectures (shared-CNN BiGRU, CTC, Transformer, MobileNetV3 reference)"
+license = {text = "Proprietary - all rights reserved; see LICENSE (no open-source license granted)"}
+classifiers = ["License :: Other/Proprietary License"]
+requires-python = ">=3.12"
+dependencies = ["torch==2.8.0", "torchvision==0.23.0", "numpy==2.4.6", "Pillow==12.2.0"]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.10,<4"]
+
+[project.scripts]
+captcha-ocr = "captcha_ocr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

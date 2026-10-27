@@ -1,0 +1,10 @@
+[
+  {
+    "source_id": "replace-with-frozen-source-id",
+    "group_id": "replace-with-frozen-source-group",
+    "split": "validation",
+    "image_path": "path/to/your/authorized/image.png",
+    "label": "0123456789",
+    "sha256": "replace-with-verified-source-file-sha256"
+  }
+]

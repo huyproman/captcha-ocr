@@ -1,0 +1,10 @@
+Source distribution rights notice
+
+Source-publication authority for Nguyen Quang Huy is confirmed by
+OWNER_ATTESTATION (2026-10-27). No public reuse grant is selected. All rights reserved where
+applicable. This local engineering snapshot is not authorization to redistribute
+third-party data, pretrained weights or checkpoints.
+
+PyTorch and torchvision are external dependencies with their own licenses.
+The M0 architecture uses torchvision MobileNetV3-Small, whose implementation is
+BSD-3-Clause licensed. No upstream pretrained weight binary is included.

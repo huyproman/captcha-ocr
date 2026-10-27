@@ -1,0 +1,12 @@
+{
+  "family": "C1",
+  "vocabulary": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "input_shape": [
+    1,
+    90,
+    282
+  ],
+  "inference": "CPU batch1 threads1",
+  "preprocessing": "raw_grayscale_div255",
+  "pretrained_download": false
+}
